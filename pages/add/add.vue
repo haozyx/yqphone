@@ -45,57 +45,29 @@ export default {
 			deepLength:2,
 			fenlei:'请选择分类',
 			cur:0,
-			pickerValueArray: [
-				{
-					label: '飞机票',
-					value: 0,
-					children: [
-						{
-							label: '经济舱',
-							value: 1
-						},
-						{
-							label: '商务舱',
-							value: 2
-						}
-					]
-				},
-				{
-					label: '火车票',
-					value: 1,
-					children: [
-						{
-							label: '卧铺',
-							value: 1
-						},
-						{
-							label: '坐票',
-							value: 2
-						},
-						{
-							label: '站票',
-							value: 3
-						}
-					]
-				},
-				{
-					label: '汽车票',
-					value: 3,
-					children: [
-						{
-							label: '快班',
-							value: 1
-						},
-						{
-							label: '普通',
-							value: 2
-						}
-					]
-				}
-			]
+			pickerValueArray: []
 		};
 	},
+	onLoad() {
+		var me = this;
+		me.loadclassify();
+	},
 	methods: {
+		loadclassify(){
+			var me = this;
+			uni.request({
+				url:me.websiteUrl + 'getallclassify',
+				method: 'GET',
+				success: res => {
+					// console.log(res);
+					if(res.data.code==200){
+						me.pickerValueArray = res.data.list;
+					}
+				},
+				fail: () => {},
+				complete: () => {}
+			});
+		},
 		showpicker(){
 			 this.$refs.mpvuePicker.show();
 		},

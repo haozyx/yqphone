@@ -12,15 +12,43 @@
 		}
 	    ,{
             "path" : "pages/classify/classify",
-            "style" : {}
+            "style": {
+            				"navigationBarTitleText": "二级分类",
+            				"app-plus": {
+            				    "bounce": "none", //关闭窗口回弹效果
+            				    "titleNView": false
+            				}
+            		}
         }
         ,{
             "path" : "pages/detail/detail",
-            "style" : {}
+            "style": {
+            				"navigationBarTitleText": "详情",
+            				"app-plus": {
+            				    "bounce": "none", //关闭窗口回弹效果
+            				    "titleNView": false
+            				}
+            		}
         }
         ,{
             "path" : "pages/add/add",
-            "style" : {}
+            "style": {
+            				"navigationBarTitleText": "添加",
+            				"app-plus": {
+            				    "bounce": "none", //关闭窗口回弹效果
+            				    "titleNView": false
+            				}
+            		}
+        }
+        ,{
+            "path" : "pages/search/search",
+           			"style": {
+           				"navigationBarTitleText": "搜索",
+           				"app-plus": {
+           				    "bounce": "none", //关闭窗口回弹效果
+           				    "titleNView": false
+           				}
+           		}
         }
     ],
 	"globalStyle": {

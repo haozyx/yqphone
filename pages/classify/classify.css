@@ -1,44 +1,3 @@
-/* 顶部搜索开始 */
-.page-fill{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	background-color: #FFFFFF;
-	margin-top: -1px;
-}
-
-.head{
-	width: 100%;
-	height: 150upx;
-	background-color: #52A9EC;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.headwrap{
-	height: 35px;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	background-color: #FFFFFF;
-	width: 80%;
-	padding: 0 20upx;
-	border-radius: 20px;
-	align-items: center;
-}
-.searchimg{
-	width: 28px;
-	height: 28px;
- 
-}
-.textstyle{
-	font-size: 18px;
-}
-.searchtext{
-	width: 100%;
-}
-/* 顶部搜索结束 */
 
 /* 中间分为左右两侧 */
 	
@@ -100,6 +59,15 @@
 	border-bottom: #F8F8F8 1px solid;
 	/* border-bottom: red 1px solid; */
 }
+.first-str{
+	font-size: 14px;
+	padding: 0 30upx;
+	width: 100%;
+	height: 50upx;
+	line-height: 50upx;
+	background: #F1F1F1;
+	margin-top: 2px;
+}
 .right-scroll{
 	height: 1080upx;
 	min-height: 1080upx;
@@ -115,4 +83,24 @@
 .addimg{
 	width: 50px;
 	height: 50px;
+}
+
+/* 没有数据的样式 */
+.nodata{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 400upx;
+}
+.bigtext{
+	font-size: 20px;
+}
+.smalltext{
+	font-size: 14px;
+	margin: 20upx auto;
+}
+.nodataimg{
+	width: 100px;
+	height: 100px;
 }
