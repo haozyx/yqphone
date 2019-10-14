@@ -31,3 +31,8 @@
 	width: 40%;
 	background: #1DA8FE;
 }
+.hint-text{
+	font-size: 14px;
+	color: orangered;
+	padding: 20upx;
+}
