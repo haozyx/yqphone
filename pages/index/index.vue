@@ -54,7 +54,7 @@
 							me.indexarry = res.data.list;
 						}
 					},fail(e) {
-						console.log(e);
+						//console.log(e);
 					}
 				})
 			}

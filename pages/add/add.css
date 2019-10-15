@@ -10,12 +10,14 @@
 }
 .text{
 	margin-right: 10px;
+	flex-shrink: 0;
 }
 .inputext{
 	width: 80%;
 }
 .jilian{
 	color: #808080;
+	width: 100%;
 }
 
 .changcolor{

@@ -58,7 +58,7 @@
 			
 			},
 			searchthreeclassify(e){
-				console.log(e);
+				//console.log(e);
 				var me = this;
 				uni.request({
 					url: me.websiteUrl + 'searchphonebook',

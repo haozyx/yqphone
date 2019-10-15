@@ -47,7 +47,7 @@
 					method: 'GET',
 					data: {id:id},
 					success: res => {
-						console.log(res);
+						//console.log(res);
 						if(res.data.code ==200){
 							me.objinfo = res.data.objinfo;
 						}
