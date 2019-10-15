@@ -1,6 +1,9 @@
 <template>
 	<view class="page-fill">
 		
+		<view class="zuo" @tap="backtoindex">
+			<image class="zuoimg" src="../../static/img/zuo.png"></image>
+		</view>
 		<search @search="searchthreeclassify"></search>
 		
 		<view class="body">
@@ -65,7 +68,15 @@
 			var me = this;
 			me.gettwoclassify(e.id);
 		},
+		onBackPress(e) {
+			 
+		},
 		methods: {
+			backtoindex(){
+				uni.navigateBack({
+					delta: 1
+				});
+			},
 			searchthreeclassify(e){ 
 				var name =e;
 				uni.navigateTo({

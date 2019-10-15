@@ -35,13 +35,13 @@
 			searchthreeclassify(e){ 
 				var name =e;
 				uni.navigateTo({
-					url:'../search/search?name='+e
+					url:'/pages/search/search?name='+e
 				})
 			},
 			disdetail(e){
 				var id = e.currentTarget.dataset.id;
 				uni.navigateTo({
-					url:'../classify/classify?id='+id
+					url:'/pages/classify/classify?id='+id
 				})
 			},
 			getoneclassify(){

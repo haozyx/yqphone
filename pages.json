@@ -16,7 +16,7 @@
             				"navigationBarTitleText": "二级分类",
             				"app-plus": {
             				    "bounce": "none", //关闭窗口回弹效果
-            				    "titleNView": false
+            				    "titleNView":false
             				}
             		}
         }

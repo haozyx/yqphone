@@ -69,5 +69,13 @@
     },
     "mp-toutiao" : {
         "usingComponents" : true
+    },
+    "h5" : {
+        "title" : "垣曲通讯录",
+        "domain" : "/yqtxl",
+        "router" : {
+            "mode" : "history",
+            "base" : "/yqtxl/"
+        }
     }
 }

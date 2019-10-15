@@ -110,3 +110,15 @@
 	width: 100px;
 	height: 100px;
 }
+
+/* 左上角的返回 */
+/* 右下角的加号 */
+.zuo{
+	position: fixed;
+	left: 2upx;
+	top: 44upx;
+}
+.zuoimg{
+	width: 25px;
+	height: 25px;
+}
