@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App'
 
 Vue.config.productionTip = false
-Vue.prototype.websiteUrl = 'https://yohaoyun.com/ycxq/test/';  
+Vue.prototype.websiteUrl = 'https://yohaoyun.com/ycxq/m/';  
 App.mpType = 'app'
 
 const app = new Vue({

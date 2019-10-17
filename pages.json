@@ -1,5 +1,16 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		
+		{
+		    "path" : "pages/indeximg/indeximg",
+		    "style": {
+		    				"navigationBarTitleText": "欢迎",
+		    				"app-plus": {
+		    				    "bounce": "none", //关闭窗口回弹效果
+		    				    "titleNView": false
+		    				}
+		    		}
+		},
 		{
 			"path": "pages/index/index",
 			"style": {
@@ -50,6 +61,7 @@
            				}
            		}
         }
+    
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
