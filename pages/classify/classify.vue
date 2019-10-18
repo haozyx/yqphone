@@ -9,7 +9,7 @@
 		<view class="body">
 			<view class="left">
 				<view class="leftTitle">
-					事业单位
+					{{itemname}}
 				</view>
 				<block v-for="(er,index) in childarry" :key="index">
 					<view class="lefttext" 
@@ -61,11 +61,13 @@
 				childarry:[],
 				rightarry:{},
 				curclick:undefined,
-				disno:false
+				disno:false,
+				itemname:''
 			}
 		},
 		onLoad(e) {
 			var me = this;
+			me.itemname = e.name;
 			me.gettwoclassify(e.id);
 		},
 		onBackPress(e) {

@@ -5,7 +5,7 @@
 		<view class="body">
 			
 			<block v-for="(item,index) in indexarry" :key="index">
-				<view class="textwrap" @tap="disdetail"   :data-id="item.id">
+				<view class="textwrap" @tap="disdetail"   :data-id="item.id" :data-name="item.name">
 					<view >{{item.name}}</view>
 					<image src="../../static/img/you.png" class="you"></image>
 				</view>
@@ -40,8 +40,9 @@
 			},
 			disdetail(e){
 				var id = e.currentTarget.dataset.id;
+				var name = e.currentTarget.dataset.name;
 				uni.navigateTo({
-					url:'/pages/classify/classify?id='+id
+					url:'/pages/classify/classify?id='+id+'&name='+name
 				})
 			},
 			getoneclassify(){
